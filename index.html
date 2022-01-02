@@ -8,13 +8,13 @@
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./style.css">
-    <script src="./script.js" defer></script>
+
 </head>
 
 <body>
     <div class="card">
         <div class="search">
-            <input type="text" class="search-bar" placeholder="Search">
+            <input type="text" class="search-bar" id="search-bar" placeholder="Search">
             <button><svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 1024 1024"
                     height="1.5em" width="1.5em" xmlns="http://www.w3.org/2000/svg">
                     <path
@@ -23,21 +23,26 @@
                 </svg></button>
         </div>
 
+        <div id = "history-buttons"> </div>
+
+        <div id='current'>
+            <div class='day1 days' id='day1 days'>
+                <h2 id="city">Weather in Seattle</h2>
+                <h1 id="temp">51°F</h1>
+                <div class="flex">
+                    <img src="https://openweathermap.org/img/wn/04n.png" alt="" id="icon" />
+                    <div class="description" id='description'>Cloudy</div>
+                </div>
+                <div id="humidity">Humidity: 60%</div>
+                <div id="wind">Wind speed: 6.2 mph</div>
+                <div id='uvi'>Uvi: Low</div>
+            </div>
+        </div>
+
         <div class="weather loading" id="weather">
 
-            <div class='day1 days' id='day1 days'>
-                <h2 class="city">Weather in Seattle</h2>
-                <h1 class="temp">51°F</h1>
-                <div class="flex">
-                    <img src="https://openweathermap.org/img/wn/04n.png" alt="" class="icon" />
-                    <div class="description">Cloudy</div>
-                </div>
-                <div class="humidity">Humidity: 60%</div>
-                <div class="wind">Wind speed: 6.2 mph</div>
-            </div>
-
-            <div class='day2 days' id='day2 days'>
-                <h2>Tomorrow</h2>
+            <!--  <div class='day2 days' id='day2 days'>
+               <h2>Tomorrow</h2>
                 <h1 class="temp">51F°</h1>
                 <div class="flex">
                     <img src="https://openweathermap.org/img/wn/04n.png" alt="" class="icon" />
@@ -45,43 +50,11 @@
                 </div>
                 <div class="humidity">Humidity: 60%</div>
                 <div class="wind">Wind speed: 6.2 mph</div>
-            </div>
-
-            <div class='day3 days' id='day3 days'>
-                <h2 class="city">The Next Day</h2>
-                <h1 class="temp">51°F</h1>
-                <div class="flex">
-                    <img src="https://openweathermap.org/img/wn/04n.png" alt="" class="icon" />
-                    <div class="description">Cloudy</div>
-                </div>
-                <div class="humidity">Humidity: 60%</div>
-                <div class="wind">Wind speed: 6.2 mph</div>
-            </div>
-
-            <div class='day4 days' id='day4 days'>
-                <h2>The Day After That</h2>
-                <h1 class="temp">51°F</h1>
-                <div class="flex">
-                    <img src="https://openweathermap.org/img/wn/04n.png" alt="" class="icon" />
-                    <div class="description">Cloudy</div>
-                </div>
-                <div class="humidity">Humidity: 60%</div>
-                <div class="wind">Wind speed: 6.2 mph</div>
-            </div>
-
-            <div class='day5 days' id='day5 days'>
-                <h2>4 Days From Now</h2>
-                <h1 class="temp">51°F</h1>
-                <div class="flex">
-                    <img src="https://openweathermap.org/img/wn/04n.png" alt="" class="icon" />
-                    <div class="description">Cloudy</div>
-                </div>
-                <div class="humidity">Humidity: 60%</div>
-                <div class="wind">Wind speed: 6.2 mph</div>
-            </div>
+            </div>-->
         </div>
-    </div>s
     </div>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="./script.js" defer></script>
 </body>
 
 </html>

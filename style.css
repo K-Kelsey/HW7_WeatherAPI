@@ -13,6 +13,13 @@ body {
     font-size: 120%;
     background-position: absolute;
   }
+  :root {
+    --hue-low: #7CFC00;
+    --hue-moderate: #FFD700;
+    --hue-high: #FF8C00;
+    --hue-veryHigh: #DC143C;
+    --hue-extreme: #8B008B;
+}
   
   .card {
     background: #000000d0;
